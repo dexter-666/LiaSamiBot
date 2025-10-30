@@ -1,5 +1,6 @@
 pyTelegramBotAPI==4.29.1
 aiogram==3.4.1
-openai==1.40.6
+openai==1.33.0
 schedule==1.2.1
 python-dotenv==1.0.1
+
