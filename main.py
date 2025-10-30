@@ -4,6 +4,9 @@ import time, threading, schedule
 from datetime import datetime
 from openai import OpenAI
 
+ai = OpenAI(api_key=OPENAI_API_KEY)
+
+
 # --- CLAVES DIRECTAMENTE ---
 OPENAI_API_KEY = "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"
 TELEGRAM_TOKEN = "8190151176:AAG7U2m65c3rv5i8PE0XchN54Rb7uJLJeng"
@@ -150,3 +153,4 @@ def run_scheduler():
 threading.Thread(target=run_scheduler, daemon=True).start()
 
 bot.polling(none_stop=True)
+
