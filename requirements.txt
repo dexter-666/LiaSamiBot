@@ -3,4 +3,3 @@ aiogram==3.4.1
 openai==1.50.2
 schedule==1.2.1
 python-dotenv==1.0.1
-sqlite3-binary
