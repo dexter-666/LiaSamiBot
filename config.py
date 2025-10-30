@@ -1,14 +1,20 @@
 import os
+from dotenv import load_dotenv
+
+# ===============================
+# CARGAR VARIABLES DESDE .env
+# ===============================
+load_dotenv()
 
 # ===============================
 # CONFIGURACIÓN DE TOKENS Y CLAVES
 # ===============================
 
 # Token del bot de Telegram
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8190151176:AAG7U2m65c3rv5i8PE0XchN54Rb7uJLJeng")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 # API Key de OpenAI (ChatGPT)
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # ===============================
 # PARÁMETROS DEL BOT
@@ -21,7 +27,7 @@ MESSAGE_INTERVAL_HOURS = 2
 DB_NAME = "database.db"
 
 # Configuración del modelo de IA (ChatGPT)
-OPENAI_MODEL = "gpt-3.5-turbo"
+OPENAI_MODEL = "gpt-4o-mini"
 
 # ===============================
 # MENSAJES PREDEFINIDOS
