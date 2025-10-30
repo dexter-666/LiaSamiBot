@@ -1,6 +1,6 @@
-aiogram==3.1.2
-aiosqlite==0.18.0
-openai==1.0.0
-apscheduler==3.10.1
-python-dotenv==1.0.0
-pytz==2025.7
+telebot==0.0.5
+aiogram==3.4.1
+openai==1.50.2
+schedule==1.2.1
+python-dotenv==1.0.1
+sqlite3-binary
