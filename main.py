@@ -7,6 +7,9 @@ import logging
 from datetime import datetime
 from typing import Optional
 
+# === Ajuste para Render: asegurar directorio de trabajo ===
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 from config import TELEGRAM_TOKEN, OPENROUTER_API_KEY, DB_NAME, MESSAGE_INTERVAL_HOURS, AI_MODEL, WELCOME_MESSAGE
 
 import telebot
@@ -97,8 +100,8 @@ def generate_ai_reply(system_prompt: str, user_message: str) -> str:
         return "Lo siento — ahora mismo no puedo acceder al servicio de IA. ¿Quieres que intentemos algo simple juntos?"
 
     messages = [
-        {"role":"system", "content": system_prompt},
-        {"role":"user", "content": user_message}
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": user_message}
     ]
 
     try:
